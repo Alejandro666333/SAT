@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu de navegacion responsive</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+
+    <nav class="nav">
+        <div class="nav_conteiner">
+
+            <a href="#" class="nav_logo">Mi sitio</a>
+            <button class="nav_toggle" id="navToggle">
+
+                <span class="nav_toggle-line"></span>
+                <span class="nav_toggle-line"></span>
+                <span class="nav_toggle-line"></span>
+
+            </button>
+
+            <ul class="nav_menu" id="navMenu">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Inicio</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Servicios</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Contacto</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Contenido principal</h1>
+        <p>Este es un ejemplo de menú de navegaion responsive con metodologia mobile-first y BEM</p>
+        <p>En dispositivos moviles, el menú se oculta y se muestra mediante un boton hamburguesa.</p>
+        <p>En pantalla mas grande (768px o mas), el menú se muestra en formato horizontal.</p>
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
